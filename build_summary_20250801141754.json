@@ -1,0 +1,8 @@
+{
+  "install_command": "/bin/bash -c \"$(curl -fsSL https://github.com/your-github-username/ginie_auto_deploy.git/raw/main/install.sh)\"",
+  "qr_code": null,
+  "snapshot": "snapshot_20250801141754.zip",
+  "sha256": "dd38c2eaf20bb9339da56ee23c87287bcffdf8c6b5bcb088b3d0652e1dec7b7a",
+  "encrypted_snapshot": "snapshot_20250801141754.zip.enc",
+  "key_file": "snapshot_20250801141754.zip.key"
+}
