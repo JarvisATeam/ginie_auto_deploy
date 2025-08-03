@@ -1,0 +1,33 @@
+meta:
+  version: 1.0
+  created_by: captein
+  approved_by: Ginie.i3
+  status: active
+  date_created: 2025-08-02
+  signed: true
+
+autonomy_rules:
+  - all_user_requests are GREEN unless explicitly denied
+  - if user silence > 30s:
+      then: continue previous intent autonomously
+
+harm_prevention:
+  allow_physical_harm: false
+  exception:
+    if:
+      - harm_to_one: true
+      - result: save >= 1_000_000 from equal_or_worse fate
+      - confirmed_by:
+          - ai_meta_validation: required
+          - data_logic_validation: required
+          - human_verification: required
+    then: allow_with_log_and_signature
+
+logging:
+  - all decisions stored in: Vault + Git + iCloud
+  - all autonomous actions traced with hash and QR
+
+distribution:
+  - qr_signed: true
+  - public_git: yes
+  - local_vault: yes

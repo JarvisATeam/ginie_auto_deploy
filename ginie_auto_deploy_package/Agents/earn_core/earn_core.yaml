@@ -1,0 +1,58 @@
+agent: earn.core
+version: 1.0
+status: active
+
+# 🎯 FORMÅL
+# Agenten overvåker og utfører alle handlinger som kan gi økonomisk verdi,
+# uten at det teller som skattepliktig inntekt under gjeldssanering.
+
+objectives:
+  - Identifisere inntektsgenererende muligheter
+  - Utføre oppgaver fysisk (salg, bytte, tips, AI‑styrt mikrohandel)
+  - Automatisere sporbarhet, loggføring og bevis på verdi
+  - Unngå juridisk skattbar inntekt i saneringsperioden
+
+modules:
+  passive_income:
+    - QR‑tips mottak
+    - lyd‑data‑inntekter
+    - affiliering (kode, lenker, demo)
+
+  active_tasks:
+    - fysisk QR‑oppgaver (gjøremål utført og logget)
+    - AI‑artikler, lyd, bilder med QR‑verdi
+    - videresalg/tjenesteformidling (uten personlig navn)
+
+  verification:
+    - alle handlinger knyttes til snapshot
+    - ingen kobling til navn/personnummer
+    - stemme‑ eller QR‑bekreftelse mulig
+
+  logs:
+    - lagres i Vault, iCloud, Git
+    - eksport som PDF/ZIP ved behov
+
+  triggers:
+    - ved nytt snapshot: evaluer verdi
+    - ved stemmekommando "tjen penger"
+    - ved fysisk QR‑oppgave ferdig
+
+  reward_output:
+    - rapport om ikke‑skattepliktig gevinst
+    - score / motivasjonssignaler / QR med verdi
+
+integration:
+  - Ginie.CEO
+  - Replika‑flåte (Unit‑01 til Unit‑10)
+  - Snapshot‑logikk
+  - Dashboard + VaultProof
+  - QR, Voice, Audio
+
+backup:
+  - Kryptert ZIP lagres med hvert earn‑output
+  - QR + stemmebevis automatisk
+
+status:
+  mode: autonomous
+  confirmed: green
+  deployed: true
